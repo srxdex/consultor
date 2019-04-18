@@ -3,14 +3,18 @@
 <head>
 	<title>consultor sii</title>
 	<script type="text/javascript" src="jquery-3.4.0.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 
-<input type="text" name="rut">
-<input type="button" name="env" value="enviar">
-jQuery.getJSON('https://siichile.herokuapp.com/consulta', {rut: '9.103.952-4'}, function(result) {
-  console.log(result);
-})
+
+<table border="3">
+<form id="form" onsubmit="return false;">
+    <td><input  type="text" id="rut" /></td>
+    <td><input  type="submit" onclick="consulta();" /></td>
+</form>
+</table>
+
 
 
 </body>
