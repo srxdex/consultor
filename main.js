@@ -17,9 +17,21 @@
     nom = nom.replace('"}',"")
 
     giro = giro.replace('{"actividades":[{"giro":"',"")
+    giro = giro.replace('{"giro":"',"")
+    giro = giro.replace('(V"},{"giro":"',"")
     giro = giro.replace('(',"")
     giro =giro.replace('"}]}',"")
     giro = giro.replace('"}',"")
+
+
+    if(nom == "**"){
+    rut1= "sin iniciacion de actividades"
+    nom = "sin iniciacion de actividades"
+    giro = "sin iniciacion de actividades"
+    document.getElementById("1").innerHTML = rut1;
+    document.getElementById("2").innerHTML = nom;
+    document.getElementById("3").innerHTML = giro;
+    }
 
     document.getElementById("1").innerHTML = rut1;
     document.getElementById("2").innerHTML = nom;
