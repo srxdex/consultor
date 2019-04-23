@@ -15,8 +15,9 @@
 </head>
 <body>
 <script type="text/javascript">
-	var color
-    color = "green"
+	function lim() {
+        location.reload(true);
+    }
 </script>
 
 <table id="t1" border="2" style="width:80%">
@@ -45,8 +46,9 @@
 
 <table border="3">
 <form id="form" onsubmit="return false;">
-    <td><input  type="text" id="rut" ></td>
+    <td><h5>ingrese rut a buscar</h5><input  type="text" id="rut" ></td>
     <td><input  type="submit" onclick="consulta();"></td>
+    <td><input  type="submit" value="limpiar" onclick="lim();"></td>
 </form>
 </table>
 
